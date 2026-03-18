@@ -88,9 +88,14 @@ section { padding: var(--spacing-2xl) 0; position: relative; z-index: 2; }
 
 /* Hero */
 .hero { height: 100vh; min-height: 800px; display: flex; align-items: center; padding-top: 80px; }
-.hero-title { font-size: clamp(3rem, 5vw, 5rem); margin-bottom: var(--spacing-md); max-width: 800px; }
+.hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); align-items: center; width: 100%; }
+.hero-text-content { max-width: 800px; }
+.hero-title { font-size: clamp(3rem, 5vw, 4.5rem); margin-bottom: var(--spacing-md); }
 .hero-subtitle { font-size: 1.25rem; color: var(--color-text-secondary); max-width: 600px; margin-bottom: var(--spacing-lg); }
 .hero-actions { display: flex; gap: var(--spacing-md); }
+.hero-image { border-radius: 12px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
+.hero-image img { width: 100%; display: block; object-fit: cover; border-radius: 12px; filter: brightness(0.9) contrast(1.1); }
+@media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } }
 
 /* Services */
 .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-lg); }
