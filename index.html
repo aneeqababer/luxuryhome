@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura | Luxury House Development</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Neural Network / Blueprint Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <header class="navbar glass-panel">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i data-lucide="box" class="text-teal"></i>
+                <span>Aura<span class="text-teal">.</span></span>
+            </a>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About Us</a>
+                <a href="#projects">Projects</a>
+                <a href="#insights">Insights</a>
+            </nav>
+            <a href="#contact" class="btn btn-primary">Start a Project</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <h1 class="hero-title reveal">Your vision is our <span class="text-teal">blueprint.</span></h1>
+                <p class="hero-subtitle reveal" style="transition-delay: 100ms;">We collaborate closely with clients, understanding their aspirations and budget constraints. Our goal? To exceed expectations.</p>
+                <div class="hero-actions reveal" style="transition-delay: 200ms;">
+                    <a href="#projects" class="btn btn-primary">View Portfolio</a>
+                    <a href="#about" class="btn btn-outline">Our Approach</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="text-amber subtitle-caps">Expertise</span>
+                    <h2>Our Disciplines</h2>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Construction -->
+                    <div class="service-card glass-panel reveal">
+                        <div class="icon-wrapper">
+                            <i data-lucide="hard-hat"></i>
+                        </div>
+                        <h3>Construction</h3>
+                        <p class="text-muted">Master building with precision engineering and high-grade materials, ensuring structural integrity that lasts generations.</p>
+                    </div>
+
+                    <!-- Architecture -->
+                    <div class="service-card glass-panel reveal" style="transition-delay: 100ms;">
+                        <div class="icon-wrapper">
+                            <i data-lucide="ruler"></i>
+                        </div>
+                        <h3>Architecture</h3>
+                        <p class="text-muted">Innovative spatial design that balances aesthetics with functional living, creating homes that inspire and endure.</p>
+                    </div>
+
+                    <!-- Interior Design -->
+                    <div class="service-card glass-panel reveal" style="transition-delay: 200ms;">
+                        <div class="icon-wrapper">
+                            <i data-lucide="sofa"></i>
+                        </div>
+                        <h3>Interior Design</h3>
+                        <p class="text-muted">Curated environments that reflect your personal taste, utilizing premium finishes and bespoke furnishings.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about">
+            <div class="container about-grid">
+                <div class="about-image reveal">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Architectural Model">
+                </div>
+                <div class="about-content reveal" style="transition-delay: 100ms;">
+                    <span class="text-amber subtitle-caps">The Firm</span>
+                    <h2>Precision in Collaboration</h2>
+                    <p class="text-muted" style="margin-bottom: 1.5rem;">At Aura, we believe that true luxury lies in the details. From the initial sketch to the final polish, our multidisciplinary team works in perfect synchrony to deliver exceptional homes.</p>
+                    <p class="text-muted" style="margin-bottom: 2rem;">We don't just build houses; we engineer environments designed for elegant living, applying technical rigor to aesthetic ambition.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Years of Excellence</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">42</span>
+                            <span class="stat-label">Awards Won</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">120+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Gallery -->
+        <section id="projects" class="projects">
+            <div class="container">
+                 <div class="section-header reveal">
+                    <span class="text-amber subtitle-caps">Portfolio</span>
+                    <h2>Featured Builds</h2>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card reveal">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="The Monolith">
+                        <div class="project-info glass-panel">
+                            <h3>The Monolith</h3>
+                            <p class="text-muted">12,500 sq ft &bull; Beverly Hills, CA</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card reveal" style="transition-delay: 100ms;">
+                        <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Slate-Blue Modernist">
+                        <div class="project-info glass-panel">
+                            <h3>Slate-Blue Modernist</h3>
+                            <p class="text-muted">8,200 sq ft &bull; Aspen, CO</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="project-card reveal">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Glass Pavilion">
+                        <div class="project-info glass-panel">
+                            <h3>Glass Pavilion</h3>
+                            <p class="text-muted">6,400 sq ft &bull; Malibu, CA</p>
+                        </div>
+                    </div>
+
+                     <!-- Project 4 -->
+                     <div class="project-card reveal" style="transition-delay: 100ms;">
+                        <img src="https://images.unsplash.com/photo-1628624747186-a941c476b7ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="The brutalist retreat">
+                        <div class="project-info glass-panel">
+                            <h3>Brutalist Retreat</h3>
+                            <p class="text-muted">10,100 sq ft &bull; Sedona, AZ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog / Insights Section -->
+        <section id="insights" class="insights">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="text-amber subtitle-caps">Journal</span>
+                    <h2>Industry Insights</h2>
+                </div>
+
+                <div class="insights-list">
+                    <a href="#" class="insight-article glass-panel reveal">
+                        <div class="insight-meta">
+                            <span class="text-teal">Architecture</span>
+                            <span class="text-muted">Oct 24, 2026</span>
+                        </div>
+                        <div class="insight-content">
+                            <h3>Integrating Passive Cooling in High-Desert Builds</h3>
+                            <p class="text-muted">Exploring geometric shading strategies and thermal mass materials to reduce reliance on HVAC systems in arid climates.</p>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="insight-arrow"></i>
+                    </a>
+
+                    <a href="#" class="insight-article glass-panel reveal" style="transition-delay: 100ms;">
+                        <div class="insight-meta">
+                            <span class="text-teal">Interior Design</span>
+                            <span class="text-muted">Oct 12, 2026</span>
+                        </div>
+                        <div class="insight-content">
+                            <h3>The Return of Dark Woods: Walnut Elegance</h3>
+                            <p class="text-muted">How deep, rich textures are replacing light oaks in contemporary luxury spaces, creating a grounded, moody atmosphere.</p>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="insight-arrow"></i>
+                    </a>
+
+                    <a href="#" class="insight-article glass-panel reveal" style="transition-delay: 200ms;">
+                        <div class="insight-meta">
+                            <span class="text-teal">Construction</span>
+                            <span class="text-muted">Sep 28, 2026</span>
+                        </div>
+                        <div class="insight-content">
+                            <h3>Advanced Pre-Fabrication Feasibility</h3>
+                            <p class="text-muted">Analyzing the cost-to-time ratio of utilizing precision-milled steel frames manufactured off-site.</p>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="insight-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                     <a href="#" class="logo">
+                        <i data-lucide="box" class="text-teal"></i>
+                        <span>Aura<span class="text-teal">.</span></span>
+                    </a>
+                    <p class="text-muted" style="margin-top: 1rem; font-size: 0.9rem;">Architecting tomorrow's luxury landscapes.</p>
+                </div>
+                <div>
+                    <h4>Inquiries</h4>
+                    <p class="text-muted">contact@auradevelopment.com</p>
+                    <p class="text-muted">+1 (555) 019-2831</p>
+                </div>
+                <div>
+                    <h4>Offices</h4>
+                    <p class="text-muted">Los Angeles, CA</p>
+                    <p class="text-muted">Aspen, CO</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="text-muted">&copy; 2026 Aura Development. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
